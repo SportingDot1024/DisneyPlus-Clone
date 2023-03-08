@@ -1,0 +1,127 @@
+.homePage-wrapper {
+    margin-top: 75px;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+}
+
+.carousel-bg {
+    padding-top: 15px;
+    background-color: #292d3d;
+}
+
+.carousel-container {
+    margin: auto;
+    width: 91.5vw;
+}
+
+.carousel {
+    display: flex;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-content {
+    display: flex;
+    cursor: pointer;
+    border: 3px solid #292d3d;
+}
+
+.carousel-content img {
+    width: calc(91.5vw - 6px);
+}
+
+.sliderDot-container {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.sliderDot-container .dot {
+    padding: 0;
+    width: 9px;
+    height: 9px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    background-color: hsl(228deg 20% 35%);
+}
+
+.sliderDot-container .dot:not(:last-child) {
+    margin-right: 20px;
+}
+
+.sliderDot-container .dot.active {
+    background-color: #f3f3f3;
+}
+
+.appsMovies-container {
+    margin-top: 10px;
+    padding-inline: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -10px;
+}
+
+.col {
+    width: 100%;
+    flex: 0 0 auto;
+    max-width: 100%;
+    margin-block: 15px;
+    padding-inline: 10px;
+}
+
+.homePage-wrapper .app {
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #292d3d;
+    transition: transform 0.3s;
+    box-shadow: 0 15px 15px -10px rgb(0 0 0);
+}
+
+.homePage-wrapper .app:hover {
+    transform: scale(1.05) translateZ(0);
+}
+
+.homePage-wrapper .app img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+#movies-wrapper .col {
+    width: 50%;
+}
+
+.movies-container .title {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 576px) {
+    #apps-container .col {
+        width: 20%;
+    }
+
+    #movies-wrapper .col {
+        width: 25%;
+    }
+
+    .homePage-wrapper .app:hover {
+        transform: scale(1.15) translateZ(0);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .appsMovies-container {
+        padding-inline: 55px;
+    }
+}

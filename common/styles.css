@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    color: #f9f9f9;
+    background-color: #040714;
+    font-family: Avenir-Roman, sans-serif;    
+    font-style: normal;font-weight: normal;
+}
+
+.header {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    min-height: 75px;
+    align-items: center;
+    padding-inline: 35px;
+    box-sizing: border-box;
+    background-color: inherit;
+    justify-content: space-between;
+}
+
+.header .brand {
+    width: 70px;
+}
+
+.header .brand img {
+    width: 100px;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.header .button-container .login-btn {
+    font-size: 17px;
+    color: #f9f9f9;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    transition: background-color 0.2s;
+}
+
+.header .button-container .login-btn:hover {
+    background-color: hsla(0, 0%, 98%, 25%);
+}
